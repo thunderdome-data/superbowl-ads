@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>2014 Super Bowl Ad Table</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-partial.css">
+        <!--<link  rel="stylesheet" type="text/css" href="lib/css/bootstrap-responsive.min.css">-->
+        <link  rel="stylesheet" type="text/css" href="lib/css/style.css">
+    </head>
+
+  </head>
+  <body>
+  <h1>Super Bowl ads 2009-2014</h1>
+  <h2>Use the filters and search box below to find your favorite big game commercials from the past six years</h2>
+  <div id="filter-buttons">
+    <label class="filter-label lighter">Filter by </label>
+    <div class="filterCon">
+      <label class="filter-label"><input type="checkbox" id="filter6" class="toggle-button" onclick="filter_table(6,'Yes');" /><img class="filter-icon cat-icon" src="lib/img/icon-animals.png" />Animals</label>
+      <label class="filter-label"><input type="checkbox" id="filter7" class="toggle-button" onclick="filter_table(7,'Yes');" /><img class="filter-icon cat-icon" src="lib/img/icon-celeb.png" />Celebrities</label>
+      <label class="filter-label"><input type="checkbox" id="filter8" class="toggle-button" onclick="filter_table(8,'Yes');" /><img class="filter-icon cat-icon" src="lib/img/icon-children.png" />Children</label>
+    </div>
+    <div class="filterCon">
+      <label class="filter-label"><input type="checkbox" id="filter9" class="toggle-button" onclick="filter_table(9,'Yes');" /><img class="filter-icon cat-icon" src="lib/img/icon-humor.png" />Humor</label>
+      <label class="filter-label"><input type="checkbox" id="filter10" class="toggle-button" onclick="filter_table(10,'Yes');" /><img class="filter-icon cat-icon" src="lib/img/icon-sex.png" />Sex</label>
+
+    </div>
+    <div id="searchCon">
+      <div id="text-filter"></div>
+      <button type="button" class="reset-button toggle-button" onclick="reset_table();">Show all</button>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+    <div id="dashboard">
+      <table style="width: 640px;">
+        <tr style='vertical-align: top'>
+          <td class="dfm-filter">
+            <div id="control6"></div>
+            <div id="control7"></div>
+            <div id="control8"></div>
+            <div id="control9"></div>
+            <div id="control10"></div>
+          </td>
+        </tr>
+        <tr style='vertical-align: top;'>
+          <td style='width: 600px'>
+            <div id="chart1"></div>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div id="sourceCreds">
+        Sources: Time Inc., AdAge<br />
+        Credits: Jeremy Binckes, Angela Carter, Vaughn Hagerty, Brooke Howard, Courtney Wells / DFM
+    </div>
+
+<!-- video modal -->
+    <div id="video-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div style="padding: 10px">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="remove_video()";>&times;</button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <!--<div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>-->
+    </div>
+<!-- end video modal -->
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+    <script src="http://data.digitalfirstmedia.com/lib/js/handlebars-1.0.rc.1.js"></script>
+    <script src="lib/js/superbowl-ads.js"></script>
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37303540-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+  </body>
+</html>
