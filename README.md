@@ -17,8 +17,8 @@ Assumptions
 -----------
 
 * jQuery
-* ?
-* ?
+* Google visualization API
+* handlebars.js
 
 
 License
