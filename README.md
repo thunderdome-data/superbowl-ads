@@ -4,7 +4,7 @@ superbowl-ads
 What is this?
 -------------
 
-A searchable list of Super Bowl ads from 2009-2014
+A searchable list of Super Bowl ads from 2009-2014.
 Demo (scroll a little ways down): 
 http://www.denverpost.com/ci_25020593/take-look-inside-super-bowl-ad-factory
 
