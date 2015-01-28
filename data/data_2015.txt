@@ -1,0 +1,2 @@
+Year	Advertiser	Description of Ad 	YouTube video URL	Category: AnimalsCat: Celebrity	Cat: Children	Cat: Humor	Cat: Sex	No	No
+2013	Axe	A drowning Shane Van Der Westhuizen is saved by sexy liveguard, whom she leaves for an astronaut.	http://youtu.be/HJDi9zp0UPY	No	No	Yes	Yes	No	No
