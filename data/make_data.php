@@ -3,7 +3,6 @@ $icons = array('6' => 'icon-animals.png','7' => 'icon-celeb.png','8' => 'icon-ch
 $f = 'data_2015.tsv';
 $lines = file($f);
 foreach($lines as $line) {
-echo $line;
     $pieces = explode("\t",$line);
 
     // Remove the timestamp field, which is in the spreadsheet because we used Google Forms to input the data.
@@ -64,7 +63,6 @@ echo $line;
     }
     $pieces[4] .= ' ' . $cats;
 
-    // Man, this is ugly. 
     // A row in the superbowl-ads.js looks like this:
     // [{"v":2014,"f":"2014"},"Axe Peace","Make Love, Not War","Soldiers and dictators appear to be engaging in war activites, but they are actually demonstrating love.","N/A","<button type=\"button\"  class=\"video-button\" onclick=\"show_video('63b4O_2HCYM')\">Watch ad</button>","No","No","No","No","No"]
     echo '[{"v":' . $pieces[0] . ',"f": "' . $pieces[0] . '"},"' . $pieces[1] . '","' . $pieces[2] . '","' . str_replace('"', "'", $pieces[3]) . '","' . str_replace('"', '\"', $pieces[4]) . '","' . str_replace('"', '\"', $pieces[5]) . '","' . $pieces[6] . '","' . $pieces[7] . '","' . $pieces[8] . '","' . $pieces[9] . '","' . $pieces[0] . '"],';
