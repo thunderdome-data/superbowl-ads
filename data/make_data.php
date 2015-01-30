@@ -62,10 +62,14 @@ echo $line;
             $cats .= '<img class="cat-icon" src="lib/img/' . $icons[$i] . '" />';
         }
     }
-    $pieces[3] .= ' ' . $cats;
-    echo implode("\t",$pieces) . "\n";
+    $pieces[4] .= ' ' . $cats;
 
+    // Man, this is ugly. 
+    // A row in the superbowl-ads.js looks like this:
+    // [{"v":2014,"f":"2014"},"Axe Peace","Make Love, Not War","Soldiers and dictators appear to be engaging in war activites, but they are actually demonstrating love.","N/A","<button type=\"button\"  class=\"video-button\" onclick=\"show_video('63b4O_2HCYM')\">Watch ad</button>","No","No","No","No","No"]
+    echo '[{"v":' . $pieces[0] . ',"f": "' . $pieces[0] . '"},"' . $pieces[1] . '","' . $pieces[2] . '","' . str_replace('"', "'", $pieces[3]) . '","' . str_replace('"', '\"', $pieces[4]) . '","' . str_replace('"', '\"', $pieces[5]) . '","' . $pieces[6] . '","' . $pieces[7] . '","' . $pieces[8] . '","' . $pieces[9] . '","' . $pieces[0] . '"],';
 }
+
 function make_link($url) 
 {
     if ( strpos($url, 'youtube') > -1 ):
