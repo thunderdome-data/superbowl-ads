@@ -2,7 +2,7 @@
 
 ## How to use this
 You'll need a tab-separated spreadsheet ***with fields in the following order***
-```Timestamp	Year	Which company is the advertiser?	Please write a one-sentence description of the ad.	Ad title	Categories	YouTube video URL	Category: Animals	Category: Celebrity	Category: Children	Category: Humor	Category: Sex```
+```Timestamp	Year	Company	Ad description	Ad title	Categories	YouTube video URL	Category: Animals	Category: Celebrity	Category: Children	Category: Humor	Category: Sex```
 
 Save it in the data directory as `data_YEAR.txt` where YEAR is the current year.
 
