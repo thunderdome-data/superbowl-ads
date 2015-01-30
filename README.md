@@ -2,7 +2,7 @@
 
 ## How to use this
 You'll need a tab-separated spreadsheet ***with fields in the following order***
-```Timestamp	Year	Company	Ad description	Ad title	Categories	YouTube video URL	Category: Animals	Category: Celebrity	Category: Children	Category: Humor	Category: Sex```
+```Timestamp	Year	Company	Ad description	Ad title	Categories	YouTube URL	Category: Animals	Category: Celebrity	Category: Children	Category: Humor	Category: Sex```
 
 Save it in the data directory as `data_YEAR.txt` where YEAR is the current year.
 
@@ -14,9 +14,7 @@ cd data
 php make_data.php
 ```
 
-Take the output and add it to line 16 of `lib/js/superbowl-ads.js` (sorry, this is how it works). You'll know you put it in the right place when you open up index.html (running on your local webserver) and the page doesn't break.
-
-Good luck!
+Take the output and add it to line 16 of `lib/js/superbowl-ads.js` (in that array). You'll know you put it in the right place when you open up index.html (running on your local webserver) and the page doesn't break.
 
 ## What is this?
 
@@ -28,7 +26,7 @@ http://www.denverpost.com/ci_25020593/take-look-inside-super-bowl-ad-factory
 
 ## Credits
 
-Vaughn Hagerty
+Vaughn Hagerty, Joe Murphy
 
 ## Assumptions
 
