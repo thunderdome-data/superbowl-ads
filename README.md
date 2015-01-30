@@ -18,7 +18,7 @@ Take the output and add it to line 16 of `lib/js/superbowl-ads.js` (in that arra
 
 ## What is this?
 
-A searchable list of Super Bowl ads from 2009-2014.
+A searchable list of Super Bowl ads from 2009-2015.
 Live demo (scroll a little ways down): 
 http://www.denverpost.com/ci_25020593/take-look-inside-super-bowl-ad-factory
 
