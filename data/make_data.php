@@ -4,6 +4,8 @@ $f = 'data_2015.tsv';
 $lines = file($f);
 foreach($lines as $line) {
     $pieces = explode("\t",$line);
+    // Skip the first line if it's a key.
+    if ( strtolower($pieces[1]) == 'year' ) continue;
 
     // Remove the timestamp field, which is in the spreadsheet because we used Google Forms to input the data.
     array_shift($pieces);
@@ -65,8 +67,9 @@ foreach($lines as $line) {
 
     // A row in the superbowl-ads.js looks like this:
     // [{"v":2014,"f":"2014"},"Axe Peace","Make Love, Not War","Soldiers and dictators appear to be engaging in war activites, but they are actually demonstrating love.","N/A","<button type=\"button\"  class=\"video-button\" onclick=\"show_video('63b4O_2HCYM')\">Watch ad</button>","No","No","No","No","No"]
-    echo '[{"v":' . $pieces[0] . ',"f": "' . $pieces[0] . '"},"' . $pieces[1] . '","' . $pieces[2] . '","' . str_replace('"', "'", $pieces[3]) . '","' . str_replace('"', '\"', $pieces[4]) . '","' . str_replace('"', '\"', $pieces[5]) . '","' . $pieces[6] . '","' . $pieces[7] . '","' . $pieces[8] . '","' . $pieces[9] . '","' . $pieces[0] . '"],';
+    echo '[{"v":' . $pieces[0] . ',"f": "' . $pieces[0] . '"},"' . $pieces[1] . '","' . str_replace('"', '\"', $pieces[2]) . '","' . str_replace('"', '\"', $pieces[3]) . '","' . str_replace('"', '\"', $pieces[4]) . '","' . str_replace('"', '\"', $pieces[5]) . '","' . $pieces[6] . '","' . $pieces[7] . '","' . $pieces[8] . '","' . $pieces[9] . '","' . $pieces[0] . '"],';
 }
+echo "\n";
 
 function make_link($url) 
 {
