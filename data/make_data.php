@@ -29,6 +29,29 @@ echo $line;
 9        data.addColumn("string","Humor");
 10        data.addColumn("string","Sex");
 
+// The fields as they exist at this point in the script:
+  [0]=>
+  string(4) "2015"
+  [1]=>
+  string(7) "Wix.com"
+  [2]=>
+  string(14) "It's That Easy"
+  [3]=>
+  string(200) "The company promotes it's services to simplify website creation, specifically for small business owners, as former NFL quarterback Brett Favre gets business advice from Rex Lee (Lloyd on "Entourage")."
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(43) "https://www.youtube.com/watch?v=8IaaxVgIIr8"
+  [6]=>
+  string(2) "No"
+  [7]=>
+  string(3) "Yes"
+  [8]=>
+  string(2) "No"
+  [9]=>
+  string(2) "No"
+  [10]=>
+  string(2) "No"
 */
 
     $pieces[5] = make_link($pieces[5]);
