@@ -26,7 +26,8 @@ http://www.denverpost.com/ci_25020593/take-look-inside-super-bowl-ad-factory
 
 ## Credits
 
-Vaughn Hagerty, Joe Murphy
+* [Vaughn Hagerty](https://github.com/vhagerty)
+* [Joe Murphy](https://github.com/freejoe76)
 
 ## Assumptions
 
