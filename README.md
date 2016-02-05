@@ -14,7 +14,12 @@ cd data
 php make_data.php
 ```
 
-Take the output and add it to line 16 of `lib/js/superbowl-ads.js` (in that array). You'll know you put it in the right place when you open up index.html (running on your local webserver) and the page doesn't break.
+Take the output and add it to line 16 or 17 of `lib/js/superbowl-ads.js` (in that array). You'll know you put it in the right place when you open up index.html (running on your local webserver) and the page doesn't break.
+
+### How to edit the branding
+
+The index.html now includes Denver Post-specific analytics and ads scripts and markup. These are identified in the head and the top of the body, as well as in the footer. This was added so when people view the mobile-friendly version of the database, ads and analytics are present.
+
 
 ## What is this?
 
