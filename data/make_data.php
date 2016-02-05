@@ -1,6 +1,6 @@
 <?php
 $icons = array('6' => 'icon-animals.png','7' => 'icon-celeb.png','8' => 'icon-children.png', '9' => 'icon-humor.png', '10' => 'icon-sex.png');
-$f = 'data_2015.tsv';
+$f = 'data_2016.tsv';
 $lines = file($f);
 foreach($lines as $line) {
     $pieces = explode("\t",$line);
